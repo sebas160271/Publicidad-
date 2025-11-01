@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios Empresariales — Confianza y Calidad</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand">
+        <img src="logo.svg" alt="Logo" class="logo-img" />
+        <span class="brand-text">EmpresaPro</span>
+      </a>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto" class="btn-outline">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Soluciones empresariales que generan confianza y resultados</h1>
+          <p>Servicios profesionales, atención personalizada y soluciones escalables para su empresa.</p>
+          <div class="hero-actions">
+            <a href="#servicios" class="btn-primary">Ver servicios</a>
+            <a href="#contacto" class="btn-ghost">Contáctanos</a>
+          </div>
+        </div>
+        <div class="hero-card animate-fadeup">
+          <ul class="highlights">
+            <li><strong>+10 años</strong> de experiencia</li>
+            <li><strong>Clientes</strong> en varias industrias</li>
+            <li><strong>Soporte</strong> dedicado</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-sub">Ofrecemos paquetes adaptados a pymes y grandes empresas.</p>
+        <div class="services-grid">
+          <article class="service-card animate-scale">
+            <h3>Consultoría estratégica</h3>
+            <p>Diagnóstico, planificación y acompañamiento para optimizar procesos.</p>
+            <a href="#contacto" class="link-more">Solicitar cotización →</a>
+          </article>
+
+          <article class="service-card animate-scale delay-1">
+            <h3>Marketing y publicidad</h3>
+            <p>Campañas digitales, branding y diseño orientado a conversión.</p>
+            <a href="#contacto" class="link-more">Solicitar cotización →</a>
+          </article>
+
+          <article class="service-card animate-scale delay-2">
+            <h3>Desarrollo & Tecnología</h3>
+            <p>Sitios web corporativos, plataformas y automatización.</p>
+            <a href="#contacto" class="link-more">Solicitar cotización →</a>
+          </article>
+
+          <article class="service-card animate-scale delay-3">
+            <h3>Soporte y mantenimiento</h3>
+            <p>Planes de soporte 24/7 y mantenimiento preventivo.</p>
+            <a href="#contacto" class="link-more">Solicitar cotización →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-sub">Proyectos y casos de éxito.</p>
+        <div class="gallery-grid">
+          <img src="https://picsum.photos/seed/p1/800/600" alt="Proyecto 1" class="gallery-item" />
+          <img src="https://picsum.photos/seed/p2/800/600" alt="Proyecto 2" class="gallery-item" />
+          <img src="https://picsum.photos/seed/p3/800/600" alt="Proyecto 3" class="gallery-item" />
+          <img src="https://picsum.photos/seed/p4/800/600" alt="Proyecto 4" class="gallery-item" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container contact-grid">
+        <div class="contact-card animate-fadeup">
+          <h2>Hablemos de su proyecto</h2>
+          <p>Complete el formulario y nos pondremos en contacto en menos de 48 horas.</p>
+          <form id="contactForm">
+            <div class="field-row">
+              <input type="text" name="nombre" placeholder="Nombre" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto" rows="5" required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Enviar</button>
+              <button type="button" id="callBtn" class="btn-ghost">Llámanos</button>
+            </div>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <h3>Contacto</h3>
+          <p><strong>Tel:</strong> +57 300 000 0000</p>
+          <p><strong>Email:</strong> contacto@empresapro.example</p>
+          <p><strong>Dirección:</strong> Bogotá, Colombia</p>
+          <div class="small-cta">
+            <a href="#" class="btn-primary small">Solicitar reunión</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> EmpresaPro — Confianza y Calidad. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#politicas">Políticas</a>
+        <a href="#aviso">Aviso legal</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <img id="modalImg" src="" alt="" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+                </html>
