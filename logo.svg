@@ -1,0 +1,20 @@
+<!-- Logo corporativo sobrio: isotipo + logotipo. Color primario: #1f3b4d -->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120" role="img" aria-label="Logo EmpresaPro">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#1f3b4d" stop-opacity="1" />
+      <stop offset="1" stop-color="#506374" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="120" rx="18" fill="none" />
+  <!-- isotipo: forma geométrica que sugiere crecimiento y solidez -->
+  <g transform="translate(18,12)">
+    <rect x="0" y="0" width="64" height="64" rx="12" fill="url(#g1)" />
+    <path d="M12 44 L32 18 L52 44" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <!-- logotipo -->
+  <g transform="translate(110,36)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#1f3b4d">Empresa</text>
+    <text x="0" y="28" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#506374">Pro — Confianza & Calidad</text>
+  </g>
+</svg>
